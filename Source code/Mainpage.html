@@ -1,0 +1,575 @@
+<!doctype html>
+<head>
+  <title>Memu</title>
+  <link rel="icon" type="image/x-icon" href="NCC Flag.jpg">
+</head>
+<head>
+<style>
+body{margin:0;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top:0;
+  width:100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  background-color: #f1f1f1;
+  padding: 60px 40px;
+  color: rgb(14, 236, 195);
+  text-align: center;
+  font-size: 40px; 
+  font-family: Copperplate Gothic;
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+</style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:20}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  top : 250px;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="1.jfif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="2.jfif" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="3.jfif" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="4.jfif" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="Scroll.jpg" style="width:100%">
+  <div class="text">Caption Five</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<body>
+
+<div id="header">MEMU</div>
+
+<div style="margin-top:300px;padding:20px 15px 200px;font-size:20px;font-style:Copperplate Gothic;">
+  <p align=center><b>Hello buddies.</b></p>
+  <p align=center>Welcome to </p>
+  <h1 align="center">MEMU<br>THE MEME MUSEUM</h1>
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=20">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+.right {
+  flex: 65%;
+  padding: 15px;
+}
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<ul>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 255, 238);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="Signin.html">SignIn</a>
+  <a href="Setting.html">Settings</a>
+  <a href="Contacts.html">Contact</a>
+  <a href="About.html">About</a>
+</div>
+
+<div id="main">
+<button class="openbtn" onclick="openNav()">Home</button>
+</div>
+</body>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+</ul>
+<!-- Add icon library -->
+<meta name="viewport" content="width=device-width, initial-scale=5">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; 
+  text-align: center;
+  width: 15%; 
+  padding: 10px ; 
+  transition: all 0.3s ease;
+  color: white; 
+  font-size: 30px; 
+}
+
+.icon-bar a:hover {
+  background-color: #000; 
+}
+
+.active {
+  background-color: #04AA6D; 
+}
+</style>
+
+<meta name = "viewport" content="width=device-width, initial-scale=5">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+<style>
+  .container{
+  perspective: 1000px;
+}
+.card1{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 100px;
+  left: 230px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+.card2{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 100px;
+  left: 630px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+.card3{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 100px;
+  left: 1030px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+.card4{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 450px;
+  left: 230px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+.card5{
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 450px;
+  left: 630px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+.card6 {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 450px;
+  left: 1030px;
+  transition: 2s;
+  transform-style: preserve-3d;
+}
+.card1:hover{
+  transform: rotateY(180deg);
+}
+.card2:hover{
+  transform: rotateY(180deg)
+}
+.card3:hover{
+  transform: rotateY(180deg)
+}
+.card4:hover{
+  transform: rotateY(180deg)
+}
+.card5:hover{
+  transform: rotateY(180deg)
+}
+.card6:hover{
+  transform: rotateY(180deg)
+}
+.outside,.inside{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.5rem;
+}
+.outside{
+  background-color: none;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.outside h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(10, 233, 241);
+  margin-bottom: 30px;
+}
+.inside{
+  background-color: none;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.inside img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+
+}
+</style>
+</head>
+<body>
+  <div class="container">
+      <div class="card1">
+          <div class="outside">
+              <h1>Movies</h1>
+              <h3>This part have jokes of Movies.</h3>
+          </div>
+          <div class="inside">
+              <h2>Movies</h2><br>
+              <button class="button"><a href="Movies.html"><span>Click Here</span></a></button>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="card2">
+          <div class="outside">
+              <h1>Education</h1>
+              <h3>This part have jokes of Education.</h3>
+          </div>
+          <div class="inside">
+              <h2>Education</h2><br>
+              <button class="button"><a href="Education.html"><span>Click Here</span></a></button>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="card3">
+          <div class="outside">
+              <h1>Games</h1>
+              <h3>This part have jokes of Games.</h3>
+          </div>
+          <div class="inside">
+              <h2>Games</h2><br>
+              <button class="button"><a href="Games.html"><span>Click Here</span></a></button>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="card4">
+          <div class="outside">
+              <h1>Jokes</h1>
+              <h3>This part have jokes of Jokes.</h3>
+          </div>
+          <div class="inside">
+              <h2>Jokes</h2><br>
+              <button class="button"><a href="Jokes.html"><span>Click Here</span></a></button>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="card5">
+          <div class="outside">
+              <h1>Media</h1>
+              <h3>This part have jokes of Media.</h3>
+          </div>
+          <div class="inside">
+              <h2>Media</h2><br>
+              <button class="button"><a href="Media.html"><span>Click Here</span></a></button>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="card6">
+          <div class="outside">
+              <h1>Others</h1>
+              <h3>This part have jokes of Other contents.</h3>
+          </div>
+          <div class="inside">
+              <h2>Others</h2><br>
+              <button class="button"><a href="Others.html"><span>Click Here</span></a></button>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

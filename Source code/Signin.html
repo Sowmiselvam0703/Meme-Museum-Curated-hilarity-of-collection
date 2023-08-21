@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="Images/Logo 4 .jpg" rel="icon">
+    <title>SignIn</title>
+    <script src="login.js"></script>
+    <link href="1.css" rel="stylesheet" type="text/css">
+    <link href="2.css" rel="stylesheet" type="text/css">
+    <link href="3.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-login" >
+    <div class="container-login">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+                <div class="card shadow-sm my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="login-form">
+                                    <div class="text-center">
+                                        <br><br>
+                                        <h1 class="h4 text-gray-900 mb-4">SignIn Panel</h1>
+                                    </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" required="" name="username" id="exampleInputEmail" placeholder="Enter your Email ">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" name="password" required="" class="form-control" id="exampleInputPassword" placeholder="Enter Password">
+                                        </div>
+                                        <a href="Reg.html"> New User ? Register Here </a>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox small" style="line-height: 1.5rem;">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck">
+                                            </div>
+                                        </div>
+                                        <div id="myButton">
+                                            <input type="submit" class="btn btn-success btn-block" value="SignIn" name="login">
+                                        </div>
+                                    </form>
+                                    <div class="text-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script>
+		var button = document.getElementById("myButton");
+		button.addEventListener("click", function() {
+			alert("Successfully signedin !!!");
+		});
+	</script>
+
+
+</body></html>

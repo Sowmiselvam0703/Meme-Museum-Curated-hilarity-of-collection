@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      form {
+        background-color: #ffffff;
+        border: 1px solid #f1f1f1;
+        margin: 20px auto;
+        padding: 20px;
+        width: 50%;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button[type="submit"] {
+        background-color: #2edbb9;
+        border: none;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        padding: 16px;
+      }
+
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+
+      @media screen and (max-width: 600px) {
+        form {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Register Here</h1>
+      <div class="container">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button id="myButton" type="submit" >Register</button>
+      </div>
+    </form>
+    <script>
+      var button = document.getElementById("myButton");
+      button.addEventListener("click", function() {
+        alert("Successfully Registered !!!");
+      });
+    </script>
+  </body>
+</html>
